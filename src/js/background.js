@@ -30,9 +30,12 @@ var Background = (function() {
         let backgroundImage = new Image();
         backgroundImage.onload = function () { 
           if (DOM.loadingGif != null) {DOM.loadingGif.remove()};          
-            DOM.body 
-            .background = "url('" + backgroundImage.src + "') no-repeat center center fixed";
-            DOM.body.backgroundSize = "cover";
+            // DOM.body 
+            // .background = "url('" + backgroundImage.src + "') no-repeat center center";
+            // DOM.body.backgroundAttachment = "fixed";
+            // DOM.body.backgroundSize = "cover";
+            $.backstretch(backgroundImage.src);
+
          }
          
         backgroundImage.src = url;
@@ -45,6 +48,7 @@ var Background = (function() {
     // cache DOM elements
     function cacheDom() {
       DOM.body = document.getElementsByTagName("body")['0'].style;
+      DOM.main = document.getElementById('main');
       DOM.loadingGif = document.getElementById("loading-gif");
     }
 

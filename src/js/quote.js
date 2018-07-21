@@ -46,7 +46,6 @@ var Quote = (function() {
     function formatQuote(response) {
 
       response = response.filter( (x) => x.content.length < 89 )
-      console.log(response)
       let quoteText = response[0].content;
       quoteText.length > 89 ? getQuote() : renderQuoteText(quoteText);
     }

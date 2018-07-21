@@ -1,0 +1,18 @@
+create modular js structure folder and files
+
+create js file template
+
+npm init -y
+
+npm install browser-sync gulp gulp-concat gulp-sass gulp-autoprefixer gulp-babel babel-core babel-preset-es2015 gulp-sourcemaps gulp-uglify --save-dev
+
+
+create gulpfile.js with pre-defined code
+
+git init
+
+.gitignore on node_modules
+
+run gulp
+
+start coding

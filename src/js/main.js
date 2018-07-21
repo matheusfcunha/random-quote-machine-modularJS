@@ -1,0 +1,6 @@
+
+
+Quote.init();
+Background.init();
+
+
